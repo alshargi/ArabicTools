@@ -8,6 +8,20 @@ from datetime import datetime
 
 
 
+def clean_arabic_sentence(sentence):
+    # Define the characters to be removed
+    unwanted_chars = "،»»؛—"
+    
+    # Create a translation table
+    translation_table = str.maketrans('', '', unwanted_chars)
+    
+    # Translate the sentence using the translation table
+    cleaned_sentence = sentence.translate(translation_table)
+    
+    return cleaned_sentence
+
+
+
 def log(string):
     now = str(datetime.now())
     print(Fore.BLUE + now + ' ' + Style.RESET_ALL + string)
