@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name='ArabicTools',
-    version='0.0.3',
+    version='0.0.4',
     author='Dr. Faisal Alshargi',
     author_email='alshargi@hotmail.de',
     description='Testing installation of Package',
